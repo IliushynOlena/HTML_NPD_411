@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seasons</title>
+    <style>
+        body{
+            background-color: rgb(238, 232, 232);
+            font-family: sans-serif;
+            letter-spacing: 1px;
+            line-height: 22px;
+        }
+        ul{
+
+           list-style-image: url(./markers/arrow-point-to-right.png); 
+        }
+            
+      
+        /* .seasons{
+            list-style-type: none;
+        
+        }
+    
+        .seasons::before{
+            content: "> ";
+            font-weight: bold;
+            padding-right: 6px;
+        } */
+        #winter{
+            list-style-image: url(./markers/check.png); 
+            padding-left: 60px;}
+        #spring{
+            list-style-image: url(./markers/leaf.png);
+            padding-left: 60px;}
+        #summer{
+            list-style-image: url(./markers/rain.png);
+            padding-left: 60px;}
+        #autumn{
+            list-style-image: url(./markers/snow.png);
+            padding-left: 60px;}
+    </style>
+</head>
+<body>
+    <h1>Seasons</h1>
+    <ul>
+        <li class="seasons">Winter</li>
+            <ul id="winter">
+                <li>December</li>
+                <li>January</li>
+                <li>February</li>
+            </ul>
+        <li class="seasons">Spring</li>
+            <ul id="spring">
+                <li>March</li>
+                <li>April</li>
+                <li>May</li>
+            </ul>
+        <li class="seasons">Summer</li>
+            <ul id="summer">
+                <li>June</li>
+                <li>July</li>
+                <li>August</li>
+            </ul>
+        <li class="seasons">Autumn</li>
+            <ul id="autumn">
+                <li>September</li>
+                <li>October</li>
+                <li>November</li>
+            </ul>
+    </ul>
+   
+</body>
+</html>
