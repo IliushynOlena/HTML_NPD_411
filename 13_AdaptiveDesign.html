@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive design</title>
+    <style>
+        body{
+            text-transform: uppercase;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        header{
+            background-color: lightcyan;
+            padding: 20px;
+            text-align: center;
+           
+        }
+        nav{
+            background-color: lightpink;
+            padding: 10px;
+        }
+        footer{
+            background-color: lightskyblue;
+            padding: 20px;
+        }
+        .container{
+            display: flex;
+            flex-grow: 1;
+            
+        }
+        aside{
+            background-color: lightgray;
+            padding: 10px;
+          
+        }
+        aside:first-child{
+            flex-basis:15% ;
+        }
+        aside:last-child{
+            flex-basis:25% ;
+            background-color: lightsalmon;
+            /* display: none; */
+        }
+        main{
+            background-color: lightgreen;
+            padding: 20px;
+            flex-basis:60% ;
+        }
+        @media screen and (max-width:800px) {
+            main{
+                flex-basis:75% ;
+            }
+            aside:last-child{
+            display: none; 
+        }
+        aside:first-child{
+            flex-basis:25% ;
+        }
+            
+        }
+        @media screen and (min-width:400px) and (max-width:600px) {
+
+            .container{
+                flex-direction: column;
+            }
+            main{
+            order: -1;
+            }
+            aside:last-child{
+            display: block; 
+        }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <nav>Menu</nav>
+    <div class="container">
+        <aside>Left Block</aside>
+        <main>Main content</main>
+        <aside>Right Block</aside>
+    </div>
+    <footer>Footer</footer>
+    
+</body>
+</html>
